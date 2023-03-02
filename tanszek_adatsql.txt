@@ -1,0 +1,9 @@
+INSERT INTO `tanszek`(`id`, `nev`) VALUES
+(1,"Bölcsészeti előadások"),
+(2, "Nyelvészeti és irodalmi előadások"),
+(3, "Történelmi és földrajzi előadások"),
+(4, "Ügyességek"),
+(5, "A bölcsészeti kar mellett működő magántanítók előadásai"),
+(6, "Gyorsírás"),
+(7, "Történelmi előadások"),
+(8, "Nyelvészeti előadások")

@@ -1,0 +1,3 @@
+Meglévő táblánkhoz új indexet a CREATE INDEX parancs segítségével adhatunk.
+
+A parancs általános formája: CREATE INDEX Index_neve ON Tabla_Neve (Oszlop_neve ,...) Több oszlop nevének vesszővel elválasztott felsorolásával az index a felsorolt oszlopok kombinációjából jön létre.

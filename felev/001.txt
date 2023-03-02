@@ -1,0 +1,24 @@
+	félév					
+1	1872/1873 I. félév	I.Bölcsészeti előadások	1	1. Bevezetés a philosophiába;	; héttőn, kedden, d. u. 5 — ti 	Szász Béla ny. r. tanár
+1	1872/1873 I. félév	I.Bölcsészeti előadások	1	2. A régi philosophia története;	; szerdán, csütörtökön, pénteken, szombaton, d. u. ő—ti 	Szász Béla ny. r. tanár
+1	1872/1873 I. félév	I.Bölcsészeti előadások	1	3. Psychologia;	; (bevezetésül a neveléstanbaj; hétfőn, kedden, szerdán, d. e. 10—1 I 	Felméri Lajos ny. r. tanár
+1	1872/1873 I. félév	I.Bölcsészeti előadások	1	4. Neveléstan;	; csütörtökön, pénteken, szombaton, d. e. 10—11 	Felméri Lajos ny. r. tanár
+1	1872/1873 I. félév	II. Történelmi előadások.	9	1. A középkori államok alakulása és a népek politikai, társadalmi és szellemi fejlődése;	; hétfőn, kedden, csütörtökön, szombaton d. e. 11—12 	Ladányi Gedeon ny. r. lanár
+1	1872/1873 I. félév	II. Történelmi előadások.	9	2.Európa főbb államai, a XVI. században;	; szerdán, pénteken, d. e. 11—12 	Ladányi Gedeon ny. r. lanár
+1	1872/1873 I. félév	II. Történelmi előadások.	9	3.A magyar vezérek és íázt. István kora, különös tekintettel a mivelödés történetére a források bírálati (ismertetésével;	; hétfőn, kedden, szerdán, csütörtökön, pénteken, szombaton, d. u. 4—5 	Szabó Károly ny. r. tanár
+1	1872/1873 I. félév	II. Történelmi előadások.	9	4. Általános mennyiségtani és csillagászati berezetés az időszámításba és ennek alapján az egyptomiak, babyloniak. görögök és rómaiak időszámítása Caesarig;	; szombat kivételével mindennap, d. e. 8—9 	Finály H. Lajos ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	1.    A magyar irodalom története a XVI. században;	; hétfőn, kedden, szerdán, d. e. 10— lt 	Imre Sándor ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	2.    A magyar nyelő története;	; csütörtökön, pénteken, szombaton, d. e. 10—11 	Imre Sándor ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	3.        A római irodalom története;	; hétfőn, szerdán, pénteken d. e. 9—10 	Szamosi János ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	4.        Demosthenes III. Philippikájának magyarázata;	; kedden, csütörtökön, szombaton, 11—12 	d. e. Szamosi János ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	*13. Homer Iliasának magyarázata (philologiai gyakorlat), tekintettel a közóptanodai tanárjelöltekre;	; szerdán, d. n. 4—5 	Szamosi János ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	14.    Latin irály gyakorlatok, tekintettel a közóptanodai tanárjelöltekre;	; szombaton, d. u. 4—5 	Szamosi János ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	15.    Görög Syntaxis;	; hétfőn, szerdán, pénteken, II —12 	d. e. Dr. Homan Ottó ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	16.    Flautus Psendulusának értelmezése;	; kedden, szombaton, d. e. 9 —10 	Homan Ottó ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	*17. Cicero aratorának magyarázata: tekintettel a közóptanodai tanárjelöltekre;	; kedden, d. n. 4—5 	Homan Ottó ny. r. taná
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	* 18. Görög irály - gyakorlatok ;	; tekintette] a, közóptanodai tanárjelöltekre, pénteken, d. U. 4—5 	Homan Ottó ny. r. taná
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	19.    A német irodalom története, Opitzon kezdve;	; hétfőn, szerdán d. e. 11 — 12 	Dr. Meltzl Hugó ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	20.    Német irodalmi conversatorium;	; kedden, pénteken, d. e. 11 — 12 	Dr. Meltzl Hugó ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	21.    Román nyelvtan, a román nyelv elemei, névszerint annak hangtana, szólejtése és szószánnaztatása;	; Hétfőn, kedden, szerdán d. e. 8—9 	Dr. Szilassy Gergely ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	22.    A román irodalom története a XVIII század kezdetéig;	; minden csütörtökön d. e. 8—9 	Dr. Szilassy Gergely ny. r. tanár
+1	1872/1873 I. félév	I.Nyelvészeti előadások.	10	23.    33. A román nyelő eredete s történelmi fejlődéséről;	; minden pén- ken d. e. 8—9 	Dr. Szilassy Gergely ny. r. tanár
