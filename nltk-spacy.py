@@ -5,7 +5,7 @@ from openpyxl import load_workbook
 nlp = spacy.load("hu_core_news_lg")
 #book = load_workbook('.\egyetem\ossz.xlsx,data_only=True)
 #sheet = book["Egybe"]
-DATA_PATH = ".\egyetem\ossz.xlsx"
+DATA_PATH = ".\\ossz.xlsx"
 book = load_workbook(DATA_PATH,data_only=True)
 sheet = book["Egybe"]
 
@@ -68,7 +68,7 @@ def process(parts,napok,cimek,idok,rows):
       cimek.append(szov)
       #Név kezdete:Ugyanazon tanár.
       id = 0
-      for i in range(index+1,len(parts[d])-1):
+      for i in range(index+1,len(parts[d])):
         if (parts[d][i] != None and sheet[f"G{d+2}"].value != None):
           if (str.lower(parts[d][i]).rfind("dr") > -1) or (str.lower(parts[d][i]).rfind(str.lower(sheet[f"G{d+2}"].value)) > -1) or (str.lower(parts[d][i]).rfind(str.lower("ugyan")) > -1):
           #if (str.lower(parts[d][i]).rfind(str.lower(sheet[f"G{d+2}"].value)) > -1) or (str.lower(parts[d][i]).rfind(str.lower("ugyan")) > -1):
@@ -84,7 +84,10 @@ def process(parts,napok,cimek,idok,rows):
             ido_str = ido_str + parts[d][ido]
           #print(parts[d][ido])
       else:
-        ido_str = "NO DATA"
+        if (sheet[f"G{d+2}"].value != None):
+          ido_str = "NO DATA"
+        else:
+          ido_str = " "
       idok.append(ido_str)
 def save(cimek,idok):
   for i in range(2,len(idok)+2):
