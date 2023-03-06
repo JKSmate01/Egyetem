@@ -149,6 +149,10 @@ for i in range(2,rows+2):
             sheet[f"G{i}"].value = sheet[f"G{i}"].value[0:str.lower(sheet[f"G{i}"].value).rfind("^ny")]
             elozotanar = sheet[f"G{i}"].value
         if (sheet[f"G{i}"].value == "" or sheet[f"G{i}"].value == None):
+            if str.lower(sheet[f"D{i}"].value).rfind("ugyanaz") > -1:
+                sheet[f"G{i}"].value = elozotanar
+                Ugyanaz +=1
+                pass
             found = False
             for pos in tanarnevek:
                 if str.lower(sheet[f"D{i}"].value).rfind(str.lower(pos)) > -1:

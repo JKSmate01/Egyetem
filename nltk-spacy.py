@@ -70,7 +70,7 @@ def process(parts,napok,cimek,idok,rows):
       id = 0
       for i in range(index+1,len(parts[d])):
         if (parts[d][i] != None and sheet[f"G{d+2}"].value != None):
-          if (str.lower(parts[d][i]).rfind("dr") > -1) or (str.lower(parts[d][i]).rfind(str.lower(sheet[f"G{d+2}"].value)) > -1) or (str.lower(parts[d][i]).rfind(str.lower("ugyan")) > -1):
+          if (str.lower(parts[d][i]).rfind("dr") > -1) or (str.lower(parts[d][i]).rfind(str.lower(sheet[f"G{d+2}"].value)) > -1) or (str.lower(parts[d][i]).rfind(str.lower("ugyana")) > -1):
           #if (str.lower(parts[d][i]).rfind(str.lower(sheet[f"G{d+2}"].value)) > -1) or (str.lower(parts[d][i]).rfind(str.lower("ugyan")) > -1):
             #print(i, parts[d][i])
             id = i
