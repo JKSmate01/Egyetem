@@ -9,7 +9,7 @@ DATA_PATH = ".\\ossz.xlsx"
 book = load_workbook(DATA_PATH,data_only=True)
 sheet = book["Egybe"]
 
-def add_lines(line,rows,nones):
+def add_lines(line,rows):
   for i in range(2,rows+2):
     line.append(sheet[f"D{i}"].value)
 def darabolo_JM(line,parts):
@@ -97,10 +97,9 @@ def save(cimek,idok):
   book.save(DATA_PATH)
 def main(rows):
   line = []
-  napok = ["hétfő","kedd","szerd","csütörtök","péntek","pén","ked","szombat","vasárnap","hetenként","hét", "óra","heti","het","(folytatólag)","mindennap", "délelőtt"]
+  napok = ["hétfő","kedd","szerd","csütörtök","péntek","szombat","vasárnap","hetenként","hét", "óra","heti","het","(folytatólag)","mindennap","minden", "délelőtt"]
   parts = []
-  nones = 0
-  add_lines(line,rows,nones)
+  add_lines(line,rows)
   print(line)
   #for l in range(len(line)):
     #print(line[l])
