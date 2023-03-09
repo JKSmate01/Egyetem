@@ -1,6 +1,7 @@
 import spacy
 import huspacy
 from openpyxl import load_workbook
+from openpyxl.styles import PatternFill
 #huspacy.download
 nlp = spacy.load("hu_core_news_lg")
 #book = load_workbook('.\egyetem\ossz.xlsx,data_only=True)
@@ -8,6 +9,7 @@ nlp = spacy.load("hu_core_news_lg")
 DATA_PATH = ".\\ossz.xlsx"
 book = load_workbook(DATA_PATH,data_only=True)
 sheet = book["Egybe"]
+TYPES = ["FC0303","FC5203", "9DFC03"] #0 = Error 1 = Name error + 2 
 
 def add_lines(line,rows):
   for i in range(2,rows+2):
@@ -59,11 +61,18 @@ def process(parts,napok,cimek,idok,rows):
         else:
           break
       szov = ""
-      for i in range(1,index+1):
-          if szov != "":
-            szov = szov +", "+ parts[d][i]
-          else:
-            szov = szov + parts[d][i]
+      if(len(parts[d][0]) > 6):
+        for i in range(0,index+1):
+            if szov != "":
+              szov = szov +", "+ parts[d][i]
+            else:
+              szov = szov + parts[d][i]
+      else:
+        for i in range(1,index+1):
+            if szov != "":
+              szov = szov +", "+ parts[d][i]
+            else:
+              szov = szov + parts[d][i]
       #cimek.append(parts[d][1])
       cimek.append(szov)
       #Név kezdete:Ugyanazon tanár.
@@ -77,6 +86,7 @@ def process(parts,napok,cimek,idok,rows):
       #print idő
       ido_str = ""
       if id > 0:
+        sheet[f"G{d+2}"].fill = PatternFill(start_color="FFFFFF", end_color="FFFFFF", fill_type = "solid")
         for ido in range(index+1,id):
           if (ido_str != "" and parts[d][ido-1][len(parts[d][ido-1])-1] != "d"):
             ido_str = ido_str +", "+parts[d][ido]
@@ -86,12 +96,18 @@ def process(parts,napok,cimek,idok,rows):
       else:
         if (sheet[f"G{d+2}"].value != None):
           ido_str = "NO DATA"
+          sheet[f"F{d+2}"].fill = PatternFill(start_color=TYPES[1], end_color=TYPES[1], fill_type = "solid")
+          sheet[f"G{d+2}"].fill = PatternFill(start_color=TYPES[2], end_color=TYPES[2], fill_type = "solid")
         else:
           ido_str = " "
       idok.append(ido_str)
 def save(cimek,idok):
   for i in range(2,len(idok)+2):
     sheet[f"F{i}"].value = idok[i-2]
+    if (sheet[f"F{i}"].value == "NO DATA"):
+      sheet[f"F{i}"].fill = PatternFill(start_color=TYPES[0], end_color=TYPES[0], fill_type = "solid")
+    else:
+      sheet[f"F{i}"].fill = PatternFill(start_color="FFFFFF", end_color="FFFFFF", fill_type = "solid")
   for i in range(2,len(cimek)+2):
     sheet[f"E{i}"].value = cimek[i-2]
   book.save(DATA_PATH)

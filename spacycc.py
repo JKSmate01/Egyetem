@@ -166,6 +166,6 @@ for i in range(2,rows+2):
                 Ugyanaz +=1
         elozotanar = sheet[f"G{i}"].value
 
-print(time.time() - starttime)
+print(f"{time.time() - starttime} másodperc")
 print(f"Ugyanazon tanárok: {Ugyanaz}")
 book.save(DATA_PATH)
