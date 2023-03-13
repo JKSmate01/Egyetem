@@ -136,14 +136,6 @@ def szoszamlalo(stri):
 #                             break
 
 
-hdoszlista = []
-for i in range(2,rows+2):
-    if (sheet[f"C{i}"].value != None):
-        try:
-            list.index(hdoszlista,sheet[f"C{i}"].value)
-        except ValueError:
-            hdoszlista.append(sheet[f"C{i}"].value)
-
 
 #MAIN loop
 elozotanar = ""
