@@ -17,13 +17,24 @@ for row in sheet["D2":"D100000"]:
 hdoszlista = []
 for i in range(2,rows+2):
     if (sheet[f"C{i}"].value != None):
-        if sheet[f"C{i}"].value.rfind("\xa0") >=0:
-                while True:
-                    if sheet[f"C{i}"].value.rfind("\xa0") < 0:
-                        break
-                    sheet[f"C{i}"].value = sheet[f"C{i}"].value[:sheet[f"C{i}"].value.rfind("\xa0")] + sheet[f"C{i}"].value[sheet[f"C{i}"].value.rfind("\xa0")+4:]
         try:
             list.index(hdoszlista,sheet[f"C{i}"].value)
         except ValueError:
             hdoszlista.append(sheet[f"C{i}"].value)
 print(hdoszlista)
+out = open(".\\C.txt","w")
+for line in hdoszlista:
+    out.write(f"{line}\n")
+out.close()
+nevek = []
+for i in range(2,rows+2):
+    if (sheet[f"G{i}"].value != None):
+        try:
+            list.index(nevek,sheet[f"G{i}"].value)
+        except ValueError:
+            nevek.append(sheet[f"G{i}"].value)
+print(nevek)
+out = open(".\\Nevek.txt","w")
+for line in nevek:
+    out.write(f"{line}\n")
+out.close()
