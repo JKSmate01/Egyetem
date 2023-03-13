@@ -142,10 +142,10 @@ def main(rows):
   napok = ["hétfő", "kedd", "szerd",
            "csütörtök", "péntek", "szombat",
            "vasárnap", "hetenként", "hét",
-           "óra", "órán", "heti", "het",
+           "óra", "órán","órá" "heti", "het",
            "(folytatólag)", "mindennap",
-           "minden", "délelőtt",
-           "meghatározandó"]
+           "minden", "délelőtt","meghatározan",
+           "meghatározandó","időben"]
   parts = []
   add_lines(line,rows)
   #print(line)

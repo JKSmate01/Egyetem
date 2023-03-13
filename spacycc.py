@@ -13,14 +13,24 @@ Ugyanaz = 0
 
 rows = 0
 #Sorok felszámlálása
+end = False
 for row in sheet["D2":"D100000"]:
     for cell in row:
+        if (cell.value == "END"):
+            end = True
+            break
         rows += 1
+    if (end):
+        break
 
 #Név oszlop törlése
 for i in range(2,rows+2):
     if (sheet[f"G{i}"].value != None):
         sheet[f"G{i}"].value = None
+    if (sheet[f"E{i}"].value != None):
+        sheet[f"E{i}"].value = None
+    if (sheet[f"F{i}"].value != None):
+        sheet[f"F{i}"].value = None
 starttime = time.time()
 
 #Szó számláló funkció
@@ -124,6 +134,15 @@ def szoszamlalo(stri):
 #                             elozotanar = h.text.title()
 #                         else:
 #                             break
+
+
+hdoszlista = []
+for i in range(2,rows+2):
+    if (sheet[f"C{i}"].value != None):
+        try:
+            list.index(hdoszlista,sheet[f"C{i}"].value)
+        except ValueError:
+            hdoszlista.append(sheet[f"C{i}"].value)
 
 
 #MAIN loop
